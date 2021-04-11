@@ -1,0 +1,270 @@
+/* Initial Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: #8aba56;
+  --black: #191919;
+  --black1: #232323;
+  --mildgrey: #f3f3f3;
+  --grey1: #86806f;
+  --sandal: #f0ad4e;
+  --skyblue: #6fd2e5;
+  --grey2: #868784;
+  --margin1: 50px 15px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.c1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+}
+.f1 {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+.f2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: black;
+  color: white;
+}
+.a1 {
+  text-align: center;
+}
+.flex_item {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: var(--margin1);
+}
+/* Header */
+.trow {
+  background-color: var(--black1);
+  color: #ccc;
+}
+.trow .left,
+.trow .right,
+.brow .right {
+  display: inline-flex;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 10px;
+}
+.trow .left li,
+.trow .right li {
+  margin-right: 10px;
+}
+.trow .left li:hover,
+.trow .right li:hover {
+  color: white;
+  cursor: pointer;
+}
+.brow .right li {
+  padding: 20px;
+}
+.brow .right li:hover {
+  cursor: pointer;
+  background-color: var(--green);
+  color: white;
+}
+/* Three Box Section */
+.three_box {
+  background-color: var(--black);
+}
+.three_box .head {
+  background-color: var(--mildgrey);
+  font-weight: bold;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.three_box .body {
+  background-color: white;
+  color: var(--grey1);
+  line-height: 3;
+  padding: 10px 0;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.three_box .foot {
+  background-color: var(--green);
+  color: white;
+  font-weight: bold;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.three_box .foot:hover {
+  cursor: pointer;
+}
+.three_box .foot::after {
+  content: " \226b";
+}
+/* Large Box Section */
+.large_box .m1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.large_box .fitem {
+  flex: 1 1 auto;
+  text-align: left;
+  margin: 15px;
+}
+.large_box .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.large_box .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 0.5rem;
+  column-gap: 2rem;
+}
+.i1 {
+  grid-row: 1/4;
+  text-align: center;
+  border: 1px solid;
+}
+.i2,
+.i3,
+.i4 {
+  border-bottom: 1px solid;
+}
+.i1 .bg {
+  background-color: var(--black);
+  padding: 20px;
+}
+.i1 .bg p {
+  line-height: 1.5;
+}
+.i1 .button {
+  display: inline-block;
+  color: var(--green);
+  text-transform: uppercase;
+  padding: 0.35rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--green);
+}
+.i1 .button::after {
+  content: " \226b";
+}
+.i1 .button:hover {
+  background-color: var(--green);
+  color: white;
+  cursor: pointer;
+}
+.large_box .mwrap {
+  margin: 0 15px;
+}
+.f1 .left {
+  outline: 1px solid;
+  width: 130px;
+  height: 130px;
+  margin: 1rem;
+}
+.f1 .sub span {
+  color: var(--green);
+}
+.f1 .sub {
+  font-size: 0.85em;
+}
+.f1 .button {
+  display: inline-block;
+  color: var(--green);
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--green);
+}
+.f1 .button::after {
+  content: " \226b";
+}
+.f1 .button:hover {
+  background-color: var(--green);
+  color: white;
+  cursor: pointer;
+}
+.grid .right {
+  line-height: 1.5;
+}
+/* Two Box Section */
+.two_box {
+  background-color: #f3f3f3;
+}
+.two_box .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.two_box .fitem {
+  flex: 1 1 auto;
+  text-align: left;
+  margin: 0 15px;
+}
+.two_box .f1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.two_box .button {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.two_box .second .button:hover {
+  background-color: #fff;
+  color: var(--sandal);
+}
+.two_box .sec .button:hover {
+  background-color: #fff;
+  color: var(--skyblue);
+}
+.two_box .second p,
+.two_box .sec p {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.two_box .second {
+  background-color: var(--sandal);
+  padding: 35px;
+}
+.two_box .sec {
+  background: var(--skyblue);
+  padding: 35px;
+}
+.two_box .first {
+  background: black;
+  padding: 96px;
+}
+/* B3Box Section */
+.b3box {
+  background: var(--black1);
+  color: var(--grey2);
+}
+.b3box .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+.b3box .left,
+.b3box .middle,
+.b3box .right {
+  text-align: left;
+}
