@@ -268,3 +268,43 @@
 .b3box .right {
   text-align: left;
 }
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .flex {
+    display: block;
+  }
+  .trow .left,
+  .trow .right {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .trow .left li,
+  .trow .right li {
+    margin-right: 0px;
+  }
+  .brow .left {
+    text-align: center;
+  }
+  .brow .right {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .flex_item {
+    margin: 0;
+  }
+  .large_box .fitem {
+    text-align: center;
+  }
+  .large_box .grid {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 1200px) {
+}
