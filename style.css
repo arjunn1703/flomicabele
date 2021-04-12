@@ -290,6 +290,7 @@
   }
   .brow .right {
     display: block;
+    padding: 0px;
   }
   .brow .right li {
     padding: 15px;
