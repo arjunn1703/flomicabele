@@ -289,8 +289,11 @@
     text-align: center;
   }
   .brow .right {
-    display: flex;
-    justify-content: space-evenly;
+    display: block;
+  }
+  .brow .right li {
+    padding: 15px;
+    text-align: center;
   }
   .flex_item {
     margin: 0;
